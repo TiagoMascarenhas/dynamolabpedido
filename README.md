@@ -1,60 +1,87 @@
-# DynamoDB - Laboratório com LSI e GLI
+# Laboratório AWS - DynamoDB com LSI e GLI
 
-Repositório criado para documentar o laboratório prático realizado como parte dos estudos com a Escola da Nuvem. O objetivo foi aplicar conceitos de bancos de dados NoSQL utilizando o serviço Amazon DynamoDB, com foco na criação e uso de índices secundários locais (LSI) e globais (GLI).
-
----
-
-## 🚀 Objetivo do Projeto
-
-- Criar uma tabela no DynamoDB com:
-  - Chave de partição: `ID do Usuário`
-  - Chave de ordenação: `Data do Pedido`
-- Adicionar um índice secundário local (LSI) com a chave `Status`
-- Adicionar um índice secundário global (GLI) com `Status` e `ValorTotal`
-- Popular a tabela com dados manualmente e via terminal CloudShell
-- Realizar consultas usando as diferentes formas disponíveis
+Este repositório contém o laboratório prático realizado como parte da formação da Escola da Nuvem, com foco na utilização do serviço **DynamoDB** da AWS.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📌 Objetivo
 
-- **AWS DynamoDB** – Serviço NoSQL da Amazon Web Services
-- **AWS CloudShell** – Terminal nativo da AWS para automação
-- **JSON** – Utilizado na importação em lote dos dados
+Criar uma tabela no DynamoDB com os seguintes requisitos:
+
+- Chave de partição: `ID do Usuário`
+- Chave de ordenação: `Data do Pedido`
+- Índice Secundário Local (LSI): `Status`
+- Índice Secundário Global (GLI): `Status` + `ValorTotal`
+
+E realizar operações de:
+
+- Criação de tabela
+- Inserção de itens manualmente e via terminal (CloudShell)
+- Consultas otimizadas com uso de índices
 
 ---
 
-## 📁 Estrutura do Repositório
+## 🧪 O que foi praticado
 
-```
+- Criação de tabela no DynamoDB
+- Diferença entre consultas simples, com filtros, com LSI e com GLI
+- Importação de dados via CloudShell
+- Uso do comando `batch-write-item`
+- Análise de eficiência das queries
+- Exclusão de índices e tabela para evitar cobrança
+
+---
+
+## ✅ Habilidades Demonstradas
+
+- Configuração de infraestrutura na nuvem (AWS)
+- Gerenciamento de segurança (alertas de orçamento)
+- Uso de terminal AWS (CloudShell)
+
+---
+
+## ▶️ Como Reproduzir
+
+1. Acesse a AWS Console e vá para o serviço **DynamoDB**
+2. Crie a tabela com os atributos e índices indicados
+3. Faça a inserção dos dados conforme instruções
+4. Execute as consultas com e sem uso de índices
+5. Ao final, exclua os recursos para evitar cobranças
+
+---
+
+## 🖼️ Prints
+
+| Consulta via GLI | Consulta via LSI |
+|------------------|------------------|
+| ![GLI](imagens/consulta-gli.png) | ![LSI](imagens/consulta-lsi.png) |
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
 dynamodb-lab-pedidotiago/
-│
-├── README.md                  # Este arquivo de explicação do projeto
-├── pedidos_import.json        # Dados em lote para popular a tabela via terminal
-├── imagens/                   # Prints das consultas realizadas no console da AWS
-│   ├── consulta-gli.png
-│   └── consulta-lsi.png
-└── instrucoes-lab.md          # Resumo passo a passo do laboratório realizado
+├── README.md               # Este arquivo
+├── instrucoes-lab.md       # Passo a passo completo do laboratório
+├── pedidos_import.json     # Arquivo JSON usado na importação via CloudShell
+└── imagens/                # Prints de tela do console AWS
 ```
 
 ---
 
-## 🔎 Exemplos de Consultas Realizadas
+## 🧠 Aprendizados
 
-- Consulta simples por ID do usuário
-- Consulta usando LSI: filtro por `Status` para determinado usuário
-- Consulta usando GLI: busca por `Status` e pedidos com `ValorTotal` maior ou igual a determinado valor
-
-Essas consultas foram fundamentais para observar como o uso correto de índices pode melhorar (ou piorar) a eficiência das operações de leitura no DynamoDB.
+Durante o laboratório foi possível entender a importância do uso correto de índices no DynamoDB e como eles impactam diretamente a performance de leitura. Também aprendi a automatizar importações via terminal e a interpretar mensagens de eficiência das consultas.
 
 ---
 
-## 📌 Observações Finais
+## 📬 Contato
 
-> Este repositório serve como documentação pessoal e também como referência prática para quem está aprendendo sobre bancos NoSQL com a AWS. Foi desenvolvido como parte do conteúdo da turma DEV3 da Escola da Nuvem.
+- GitHub: [TiagoMascarenhas](https://github.com/TiagoMascarenhas)
+- LinkedIn: [Tiago Mascarenhas](https://www.linkedin.com/in/tiagomascarenhass)
 
----
+> Repositório criado como parte da formação na Escola da Nuvem - Turma DEV3
 
-**Tiago Mascarenhas**
-
-Julho de 2025
+**Tiago Mascarenhas**  
+Julho/2025
