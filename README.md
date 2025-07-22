@@ -54,21 +54,12 @@ E realizar operações de:
 
 | Consulta via GLI | Consulta via LSI |
 |------------------|------------------|
-| ![GLI](imagens/consulta-gli.png) | ![LSI](imagens/consulta-lsi.png) |
+| ![GLI] (<img width="1197" height="724" alt="image" src="https://github.com/user-attachments/assets/c99cdee1-b9a6-4007-8d1e-c41769e17f84" />
+) | ![LSI](<img width="1420" height="735" alt="image" src="https://github.com/user-attachments/assets/b01b9a26-bb16-464b-9611-5f3d7aad816e" />
+) |
 
 ---
 
-## 📁 Estrutura do Projeto
-
-```bash
-dynamodb-lab-pedidotiago/
-├── README.md               # Este arquivo
-├── instrucoes-lab.md       # Passo a passo completo do laboratório
-├── pedidos_import.json     # Arquivo JSON usado na importação via CloudShell
-└── imagens/                # Prints de tela do console AWS
-```
-
----
 
 ## 🧠 Aprendizados
 
