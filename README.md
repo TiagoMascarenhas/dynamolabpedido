@@ -52,8 +52,8 @@ E realizar operações de:
 
 ## 🖼️ Prints
 
-| Consulta via GLI | Consulta via LSI |
- ![GLI] (<img width="1197" height="724" alt="image" src="https://github.com/user-attachments/assets/c99cdee1-b9a6-4007-8d1e-c41769e17f84" />
+| Consulta via GLI 
+(<img width="1197" height="724" alt="image" src="https://github.com/user-attachments/assets/c99cdee1-b9a6-4007-8d1e-c41769e17f84" />
  ![LSI](<img width="1420" height="735" alt="image" src="https://github.com/user-attachments/assets/b01b9a26-bb16-464b-9611-5f3d7aad816e" />
 
 
